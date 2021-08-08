@@ -2,11 +2,8 @@ import axios from "axios";
 
 const functions = {
     loadingOKR: async () => {
-        response = await axios.get(' http://localhost:4000/OKRS').then(() => {
+        let response = await axios.get('http://localhost:4000/OKRS');
             return response.data
-        }).catch(error => {
-            return error
-        })
     }
 }
 
