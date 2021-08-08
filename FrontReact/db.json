@@ -1,0 +1,16 @@
+{
+    "OKRS":[
+        {
+            "id":1,
+            "objetivo":"Un objetivo de un usuario",
+            "title":"Titulo del OKR",
+            "progress":80
+        },
+        {
+            "id":2,
+            "objetivo":"Otro objetivo de un usuario",
+            "title":"Titulo del OKR2",
+            "progress":84
+        }
+    ]
+}
