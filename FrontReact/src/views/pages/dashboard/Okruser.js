@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 //Circular Progressbar
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import PieChart from "./PieChart";
 
 function Okruser({ okr }) {
   //Valido que vengan los datos
@@ -45,6 +46,7 @@ function Okruser({ okr }) {
               </tbody>
             </table>
           </div>
+          <PieChart/>
         </div>
       ) : (
         "Seleccione un OKR"
