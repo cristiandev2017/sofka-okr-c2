@@ -21,28 +21,32 @@ function Okruser({ okr }) {
   return (
     <Fragment>
       {okr ? (
-        <div style={{ width: "16%" }}>
-          <CircularProgressbar value={progress} text={`${progress}%`} />
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Titulo</th>
-                <th scope="col">Descripcion</th>
-                <th scope="col">Area encargada</th>
-                <th scope="col">objetivo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>{title}</td>
-                <td>{description}</td>
-                <td>{areainCharge}</td>
-                <td>{objetivo}</td>
-              </tr>
-            </tbody>
-          </table>
+        <div>
+          <div style={{ width: "16%" }}>
+            <CircularProgressbar value={progress} text={`${progress}%`} />
+          </div>
+          <div>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Area encargada</th>
+                  <th scope="col">objetivo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>{title}</td>
+                  <td>{description}</td>
+                  <td>{areainCharge}</td>
+                  <td>{objetivo}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       ) : (
         "Seleccione un OKR"
