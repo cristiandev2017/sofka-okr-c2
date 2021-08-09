@@ -15,3 +15,18 @@ export const loadingOKRFailure = (error) =>({
     type: OKRConstanst.LIST_OKRS_FAILURE,
     payload:error
 })
+
+export const loadingOKRid = (id) =>({
+    type:OKRConstanst.LIST_OKRS_ID,
+    payload:id
+});
+
+export const loadingOKRidSuccess = (okr) =>({
+    type:OKRConstanst.LIST_OKRS_ID_SUCCESS,
+    payload:okr
+})
+
+export const loadingOKRidFailure = (error) =>({
+    type:OKRConstanst.LIST_OKRS_ID_FAILURE,
+    payload:error
+})

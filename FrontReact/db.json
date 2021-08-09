@@ -1,16 +1,57 @@
 {
     "OKRS":[
         {
-            "id":1,
-            "objetivo":"Un objetivo de un usuario",
-            "title":"Titulo del OKR",
-            "progress":80
+           "id":1,
+           "objetivo":"Un objetivo de un usuario",
+           "title":"Titulo del OKR",
+           "description":"Descripcion del OKR",
+           "managerId":"1245",
+           "areainCharge":"Agile services",
+           "progress":80,
+           "krs":[
+              {
+              "_id": {
+              "$oid": "61106343609d16f1740ddf45"
+              },
+             "idOkr": "611061c6609d16f1740ddf39",
+             "description": "Socialización de la dificultades que no permitieron el alcance de objetivos",
+             "managerId": "Pepito perez",
+             "startDate": "2021/08/14",
+             "endDate": "2021/08/16",
+             "loadValue": 5,
+            "progress": 10
+            },
+            {
+              "_id": {
+              "$oid": "61106343609d16f1740dd233"
+              },
+             "idOkr": "611061c6609d16f1740dd222",
+             "description": "Socialización de la dificultades que no permitieron el alcance de objetivos",
+             "managerId": "Juanito Valenzuela",
+             "startDate": "2021/08/14",
+             "endDate": "2021/08/16",
+             "loadValue": 5,
+            "progress": 10
+            }
+         ]
         },
         {
-            "id":2,
-            "objetivo":"Otro objetivo de un usuario",
-            "title":"Titulo del OKR2",
-            "progress":84
+           "id":2,
+           "objetivo":"Un objetivo de un usuario",
+           "title":"Titulo del OKR2",
+           "description":"Descripcion del OKR",
+           "managerId":"1245",
+           "areainCharge":"Development",
+           "progress":60
+        },
+        {
+           "id":3,
+           "objetivo":"Un objetivo de un usuario",
+           "title":"Titulo del OKR3",
+           "description":"Descripcion del OKR",
+           "managerId":"1245",
+           "areainCharge":"Hitbot",
+           "progress":70
         }
     ]
 }
