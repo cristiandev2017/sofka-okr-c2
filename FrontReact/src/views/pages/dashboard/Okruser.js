@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 //Circular Progressbar
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import PieChart from "./PieChart";
+
 
 function Okruser({ okr }) {
   //Valido que vengan los datos
@@ -63,6 +63,7 @@ function Okruser({ okr }) {
             <table className="table">
               <thead>
                 <tr>
+                  <th scope="col">Titulo</th>
                   <th scope="col">Descripcion KR</th>
                   <th scope="col">Fecha de Inicio</th>
                   <th scope="col">Fecha Final</th>
@@ -73,6 +74,7 @@ function Okruser({ okr }) {
               <tbody>
                 {krs.map((kr) => (
                   <tr>
+                    <td>{kr.titleKr}</td>
                     <td>{kr.description.value}</td>
                     <td>{kr.startDate}</td>
                     <td>{kr.endDate}</td>
@@ -105,7 +107,6 @@ function Okruser({ okr }) {
               </tbody>
             </table>
           </div>
-          <PieChart/>
         </div>
       ) : (
         <h6>Seleccione un OKR</h6>
