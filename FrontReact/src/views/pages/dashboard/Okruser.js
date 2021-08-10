@@ -10,10 +10,10 @@ function Okruser({ okr }) {
   let objective = "";
   let description = "";
   let areaInCharge = "";
-  let progress = 0;
+  //let progress = 0;
   let krs = "";
   if (okr !== null) {
-    progress = okr.progress;
+    //progress = okr.progress;
     title = okr.title;
     description = okr.description;
     areaInCharge = okr.areaInCharge;
@@ -51,8 +51,8 @@ function Okruser({ okr }) {
                     <td>
                       <div style={{ width: "60%" }}>
                         <CircularProgressbar
-                          value={progress}
-                          text={`${progress}%`}
+                          value={okr?.progress || 0}
+                          text={`${okr?.progress}%`}
                         />
                       </div>
                     </td>
