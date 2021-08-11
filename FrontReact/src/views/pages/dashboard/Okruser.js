@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 //Circular Progressbar
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import {CSVLink} from 'react-csv';
 
 
 function Okruser({ okr }) {
@@ -12,6 +13,7 @@ function Okruser({ okr }) {
   let areaInCharge = "";
   let progress = 0;
   let krs = "";
+  let tableOKR = [];
   if (okr !== null) {
     progress = okr.progress;
     title = okr.title;
@@ -20,16 +22,26 @@ function Okruser({ okr }) {
     objective = okr.objective;
     krs = okr.krs;
   }
-  return (
-    <Fragment>
-      {okr ? (
-        <div>
-          {/*
-          <div style={{ width: "16%" }}>
-            <CircularProgressbar value={progress} text={`${progress}%`} />
-          </div>
-            */}
-          <div>
+  const OKR= [{      
+    "Titulo":{title},
+    "Descripcion":{description},
+    "Area encargada":{areaInCharge},
+    "objetivo":{objective},
+    "Progreso":{progress}
+  }
+]
+
+return (
+<Fragment>
+  {okr ? (
+    <div>
+      {/*
+      <div style={{ width: "16%" }}>
+        <CircularProgressbar value={progress} text={`${progress}%`} />
+      </div>
+        */}
+      <div>
+        <CSVLink data={OKR} filmane={"tablaOKR.csv"}>Exportar Tabla OKR</CSVLink>
             <table className="table">
               <thead>
                 <tr>
@@ -60,6 +72,7 @@ function Okruser({ okr }) {
                 </tr>
               </tbody>
             </table>
+            <CSVLink data={krs} filmane={"tablaKRs.csv"}>Exportar Tabla</CSVLink>
             <table className="table">
               <thead>
                 <tr>
