@@ -15,8 +15,8 @@ function BarChart({okr}){
     historicalProgress.forEach(kr => {
       arraylabels.push(kr.date);
       datapercent.push(kr.progress);
-      let color = 'rgba(' + r() + "," + r() + "," + r() + ',0.3)';
-      datacolor.push(color);
+      let color = 'rgba(' + r() + "," + r() + "," + r() + ',0.6)';
+       datacolor.push(color);
     });
     datapercent.push('100');
     console.log(datacolor);
@@ -27,9 +27,9 @@ function BarChart({okr}){
         labels:arraylabels,
         datasets:[{
             label:'avances',
-            backgroundcolor:"blue",
-            bordercolor:"red",
-            hoverbordercolor:"blue",
+            backgroundColor: datacolor,
+            borderColor: "rgba(0,0,255,.2)",
+            hoverBackgroundColor: "rgba(0,0,255,.2)",
             borderWidth:1,
             data:datapercent
         }]

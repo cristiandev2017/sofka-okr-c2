@@ -27,7 +27,7 @@ function Okruser({ okr }) {
     "Descripcion":{description},
     "Area encargada":{areaInCharge},
     "objetivo":{objective},
-    "Progreso":{progress}
+    // "Progreso":{progress}
   }
 ]
 
