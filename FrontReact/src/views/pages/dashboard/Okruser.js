@@ -11,11 +11,11 @@ function Okruser({ okr }) {
   let objective = "";
   let description = "";
   let areaInCharge = "";
-  let progress = 0;
+  //let progress = 0;
   let krs = "";
   let tableOKR = [];
   if (okr !== null) {
-    progress = okr.progress;
+    //progress = okr.progress;
     title = okr.title;
     description = okr.description;
     areaInCharge = okr.areaInCharge;
@@ -63,8 +63,8 @@ return (
                     <td>
                       <div style={{ width: "60%" }}>
                         <CircularProgressbar
-                          value={progress}
-                          text={`${progress}%`}
+                          value={okr?.progress || 0}
+                          text={`${okr?.progress}%`}
                         />
                       </div>
                     </td>
