@@ -22,6 +22,9 @@ function AllUserAllOKR() {
                                         <div className="media-body text-left">
                                             <h6 className="black">Titulo:</h6>
                                             <h6 className="black">Descripción:</h6>
+                                            <button type="button" className="btn btn-dark mb-2 float-right">
+                                                Consultar
+                                            </button>
                                         </div>
                                         <div className="align-self-center">
                                             <div style={{ width: "60%" }}>
@@ -44,6 +47,9 @@ function AllUserAllOKR() {
                                         <div className="media-body text-left">
                                             <h6 className="black">Titulo:</h6>
                                             <h6 className="black">Descripción:</h6>
+                                            <button type="button" className="btn btn-dark mb-2 float-right">
+                                                Consultar
+                                            </button>
                                         </div>
                                         <div className="align-self-center">
                                         <div style={{ width: "60%"}}>
@@ -67,6 +73,9 @@ function AllUserAllOKR() {
                                         <div className="media-body text-left">
                                             <h6 className="black">Titulo:</h6>
                                             <h6 className="black">Descripción:</h6>
+                                            <button type="button" className="btn btn-dark mb-2 float-right">
+                                                Consultar
+                                            </button>
                                         </div>
                                         <div className="align-self-center">
                                         <div style={{ width: "60%" }}>
@@ -89,6 +98,9 @@ function AllUserAllOKR() {
                                         <div class="media-body text-left">
                                             <h6 className="black">Titulo:</h6>
                                             <h6 className="black">Descripción:</h6>
+                                            <button type="button" className="btn btn-dark mb-2 float-right">
+                                                Consultar
+                                            </button>
                                         </div>
                                         <div class="align-self-center">
                                         <div style={{ width: "60%" }}>
