@@ -46,7 +46,7 @@ function AllUserAllOKR() {
                                             <h6 className="black">Descripción:</h6>
                                         </div>
                                         <div className="align-self-center">
-                                        <div style={{ width: "60%",   pathColor: "rgba(62, 152, 199)"}}>
+                                        <div style={{ width: "60%"}}>
                                                 <CircularProgressbar
                                                 //   value={okr?.progress || 0}
                                                 //   text={`${okr?.progress}%`}
