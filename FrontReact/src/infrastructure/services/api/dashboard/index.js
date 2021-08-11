@@ -10,6 +10,11 @@ const functions = {
     loadingOKRid: async (id) =>{
         const response = await axios.get('http://back-spring-grupo-5.herokuapp.com/api/getokrbyid/'+id);
         return response.data
+    },
+    //https://back-spring-grupo-5.herokuapp.com/api/get/all
+    loadingAllUserOfAllOKrs: async()=>{
+        const response = await axios.get('https://back-spring-grupo-5.herokuapp.com/api/get/all');
+        return response.data
     }
 
 }

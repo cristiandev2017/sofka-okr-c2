@@ -10,6 +10,7 @@ import { loadingOKR, loadingOKRid } from "../../application/actions/dashboard/in
 import Okruser from "../pages/dashboard/Okruser";
 import PieChart from "../pages/dashboard/PieChart.js";
 import BarChart from "../pages/dashboard/BarChart";
+import AllUserAllOKR from "../pages/dashboard/AllUserAllOKR";
 
 function App({ loadingOKR,okrs,loadingOKRid, okr }) {
   const [idokr, setidokr] = useState("");
@@ -45,6 +46,7 @@ function App({ loadingOKR,okrs,loadingOKRid, okr }) {
             <Okruser okr={okr}/>
             <PieChart okr={okr}/>
             <BarChart okr={okr}/>
+            <AllUserAllOKR/>
           </div>
           <div className="col-2"></div>
         </center>
